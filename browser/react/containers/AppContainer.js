@@ -108,21 +108,7 @@ export default class AppContainer extends Component {
         <div className="col-xs-2">
           <Sidebar deselectAlbum={this.deselectAlbum} />
         </div>
-        <div className="col-xs-10">
-        {
-          this.state.selectedAlbum.id ?
-          <Album
-            album={this.state.selectedAlbum}
-            currentSong={this.state.currentSong}
-            isPlaying={this.state.isPlaying}
-            toggleOne={this.toggleOne}
-          /> :
-          <Albums
-            albums={this.state.albums}
-            selectAlbum={this.selectAlbum}
-          />
-        }
-        </div>
+
         <Player
           currentSong={this.state.currentSong}
           currentSongList={this.state.currentSongList}
@@ -136,3 +122,19 @@ export default class AppContainer extends Component {
     );
   }
 }
+
+// <div className="col-xs-10">
+// {
+//   this.state.selectedAlbum.id ?
+//   <Album
+//     album={this.state.selectedAlbum}
+//     currentSong={this.state.currentSong}
+//     isPlaying={this.state.isPlaying}
+//     toggleOne={this.toggleOne}
+//   /> :
+//   <Albums
+//     albums={this.state.albums}
+//     selectAlbum={this.selectAlbum}
+//   />
+// }
+// </div>
