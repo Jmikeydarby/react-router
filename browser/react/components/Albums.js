@@ -12,7 +12,7 @@ const Albums = (props) => {
       {
         albums.map(album => (
           <div className="col-xs-4" key={ album.id }>
-            <a className="thumbnail" href="#" onClick={() => selectAlbum(album.id)}>
+            <a className="thumbnail" href={`#/album/${album.id}`} >
               <img src={ album.imageUrl } />
               <div className="caption">
                 <h5>

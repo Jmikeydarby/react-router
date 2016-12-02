@@ -117,6 +117,7 @@ export default class AppContainer extends Component {
               isPlaying: this.state.isPlaying,
               toggle: this.toggleOne,
 
+
               // Albums (plural) component's props
               albums: this.state.albums,
               selectAlbum: this.selectAlbum
