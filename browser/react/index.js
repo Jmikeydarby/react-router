@@ -7,10 +7,10 @@ import Artists from './components/Artists';
 import Artist from './components/Artist';
 import Songs from './components/Songs';
 import PageNotFound from './components/PageNotFound';
-import { Router, Route, hashHistory, IndexRedirect } from 'react-router';
+import { Router, Route, hashHistory, IndexRedirect, browserHistory } from 'react-router';
 
 ReactDOM.render(
-  <Router history={hashHistory}>
+  <Router history={browserHistory}>
     <Route path="/" component={ AppContainer }>
       <IndexRedirect to='/albums' />
       <Route path='/albums' component={ Albums }/>

@@ -26,7 +26,11 @@ sidebar {
     -webkit-border-radius: 1ex; }
   sidebar .logo {
     width: 100%;
-    padding: 15px; }
+    padding: 15px;
+  }
+  sidebar a {
+    font-size: 25px;
+  }
   sidebar section > * {
     padding: 0 15px; }
   sidebar .menu-item {
@@ -35,7 +39,7 @@ sidebar {
       color: #c8c8c8; }
       sidebar .menu-item a:hover {
         color: white; }
-    sidebar .menu-item.active, sidebar .menu-item:hover {
+    sidebar .menu-item.active, sidebar .menu-item:hover, sidebar a.active {
       border-left: 3px solid #00bc8c; }
 
 footer {
