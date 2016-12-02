@@ -8,6 +8,10 @@ body {
 #main {
   padding-left: 0; }
 
+.btn-xs {
+  margin-left: 5px;
+}
+
 sidebar {
   position: fixed;
   left: 0;
