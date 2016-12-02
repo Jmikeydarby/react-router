@@ -7,7 +7,6 @@ import AUDIO from '../audio';
 class Album extends Component {
   constructor (props){
     super(props);
-    this.state = {};
   }
   componentDidMount () {
     this.props.selectAlbum(this.props.params.albumId)

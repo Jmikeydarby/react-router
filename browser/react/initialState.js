@@ -1,5 +1,5 @@
 const initialState = {
-  artist: [],
+  artists: [],
   selectedArtist: {},
   albums: [],
   selectedAlbum: {},
