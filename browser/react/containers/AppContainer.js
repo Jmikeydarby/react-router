@@ -108,7 +108,21 @@ export default class AppContainer extends Component {
         <div className="col-xs-2">
           <Sidebar deselectAlbum={this.deselectAlbum} />
         </div>
+        <div className="col-xs-10">
+          {
+            this.props.children ?
+            React.cloneElement(this.props.children, {
+              album: this.state.selectedAlbum,
+              currentSong: this.state.currentSong,
+              isPlaying: this.state.isPlaying,
+              toggle: this.toggleOne,
 
+              // Albums (plural) component's props
+              albums: this.state.albums,
+              selectAlbum: this.selectAlbum
+            }) : null
+          }
+        </div>
         <Player
           currentSong={this.state.currentSong}
           currentSongList={this.state.currentSongList}
